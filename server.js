@@ -1,7 +1,8 @@
 const server = require('http').createServer()
 const io = require('socket.io')(server, {
     cors: {
-        origin: "http://localhost:8080",
+       // origin: "http://localhost:8080",
+        origin: "https://tic-tac-toe-kasturi.herokuapp.com/socket.io/socket.io.js",
         methods: ["GET", "POST"]
     }
 });
