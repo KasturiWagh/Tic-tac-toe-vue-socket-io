@@ -22,8 +22,8 @@
 
 <script>
 import io from 'socket.io-client'
-var ip = '127.0.0.1:3000';
-var socket = io.connect(ip);
+const io = require("socket.io-client");
+socket.current = io("http://localhost:3000/");
 //const socket = io("http://localhost:3000")
 export default {
   name: 'App',
