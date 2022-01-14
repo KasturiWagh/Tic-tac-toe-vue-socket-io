@@ -22,7 +22,8 @@
 
 <script>
 import io from 'socket.io-client'
-var socket = io.connect();
+//var socket = io.connect();
+const socket = io("https://tic-tac-toe-kasturi.herokuapp.com/")
 export default {
   name: 'App',
   components: {
