@@ -22,7 +22,7 @@
 
 <script>
 import io from 'socket.io-client'
-const socket = io("http://localhost:3000")
+var socket = io.connect();
 export default {
   name: 'App',
   components: {
